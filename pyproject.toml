@@ -1,5 +1,5 @@
 [project]
-name = "time-series-project"
+name = "src"
 version = "0.1.0"
 description = ""
 authors = [
@@ -14,12 +14,12 @@ dependencies = [
     "pyarrow (>=19.0.1,<20.0.0)",
     "tqdm (>=4.67.1,<5.0.0)",
     "plotly (>=6.0.0,<7.0.0)",
-    "nbformat (>=5.10.4,<6.0.0)"
+    "nbformat (>=5.10.4,<6.0.0)",
+    "geopandas (>=1.0.1,<2.0.0)"
 ]
 
 [tool.poetry]
-packages = [{include = "time_series_project", from = "src"}]
-
+packages = [{include = "src"}]
 
 [build-system]
 requires = ["poetry-core>=2.0.0,<3.0.0"]
